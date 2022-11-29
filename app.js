@@ -17,6 +17,7 @@ const { usersRouter } = require("@features/users");
 
 const { AppError, errorHandler } = require("@lib/errors");
 const { rateLimitHandler } = require("@lib/handlers");
+const { homeRouter } = require("@lib/routers");
 
 const app = express();
 
@@ -39,6 +40,7 @@ app.use(express.static("public"));
 app.use(hpp());
 
 // 2) API routes
+app.use("/api", homeRouter);
 app.use("/api/auth", authRouter);
 app.use("/api/categories", categoriesRouter);
 app.use("/api/comments", commentsRouter);

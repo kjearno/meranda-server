@@ -100,13 +100,3 @@ $ npm start
 `DELETE /users/:id`<br>
 `PATCH /users/me/photo`<br>
 `PATCH /users/me/password`
-
-## Query examples
-
-- Get all posts:
-
-  [meranda-14351.herokuapp.com/api/posts](https://meranda-14351.herokuapp.com/api/posts)
-
-- Get post by id:
-
-  [meranda-14351.herokuapp.com/api/posts/1](https://meranda-14351.herokuapp.com/api/posts/1)
