@@ -11,19 +11,19 @@
 1. Clone the repo:
 
 ```sh
-$ git clone https://github.com/kjearno/meranda-server.git
+git clone https://github.com/kjearno/meranda-server.git
 ```
 
 2. Go to the project folder:
 
 ```sh
-$ cd meranda-server
+cd meranda-server
 ```
 
 3. Install NPM packages:
 
 ```sh
-$ npm install
+npm install
 ```
 
 ## Usage
@@ -31,13 +31,13 @@ $ npm install
 - Development server:
 
 ```sh
-$ npm run dev
+npm run dev
 ```
 
 - Production server:
 
 ```sh
-$ npm start
+npm start
 ```
 
 ## API
