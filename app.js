@@ -49,7 +49,7 @@ app.use("/api/roles", rolesRouter);
 app.use("/api/subscribers", subscribersRouter);
 app.use("/api/users", usersRouter);
 
-app.all("*", (req, res) => {
+app.all("*", (req) => {
   throw new AppError(404, `Can't find ${req.originalUrl}`);
 });
 
