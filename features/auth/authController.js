@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 const { AppError } = require("@lib/errors");
 const { User } = require("@lib/sequelize");
 const { getResourceName } = require("@lib/utils");
-const ac = require("./lib/permissions");
+const ac = require("./lib/accessControl");
 
 const sendToken = async ({ user, statusCode, req, res }) => {
   const token = await promisify(jwt.sign)(
